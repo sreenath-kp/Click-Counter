@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Click Counter</title>
+</head>
+<body style="text-align: center;">
+	<p class="head">Click Counter</p>
+	<div class="box">
+    <p class="count">
+		<span
+		id="display">0</span>
+	</p>
+	<div class="buttons">
+    	<button id="plus">&#x2b</button>
+    	<button id="minus">&#8722</button>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		var count = 0;
+		var plus = document.getElementById("plus");
+		var disp = document.getElementById("display");
+
+		plus.onclick = function () {
+			count++;
+			disp.innerHTML = count;
+		}
+        minus.onclick = function () {
+			count--;
+			disp.innerHTML = count;
+		}
+       
+	</script>
+</body>
+
+</html>
